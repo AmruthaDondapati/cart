@@ -1,4 +1,5 @@
-@library('robot-shared-library')
+@library('robot-shared-library') _
+
 pipeline {
     agent any 
     stages {
