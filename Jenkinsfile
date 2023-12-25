@@ -3,10 +3,10 @@
 pipeline {
     agent any 
     stages {
-        stage ('Lintchecks') {
+        stage ('LintChecks') {
             steps {
                 script {
-                    lintChecks("start","dev.com")
+                    info("start","dev.com")
                 }
                 // sh "echo Lintcheks needs to be done"
                 // sh "echo Lintchceks were completed"
