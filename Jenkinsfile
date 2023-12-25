@@ -1,4 +1,4 @@
-@library('robot-shared-library') _
+@Library('robot-shared-library') _
 
 pipeline {
     agent any 
