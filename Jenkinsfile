@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage ('Lintchecks') {
             steps {
-                sh "echo Hi"
+                sh "echo Lintcheks needs to be done"
+                sh "echo Lintchceks were completed"
             }
         }
     }
