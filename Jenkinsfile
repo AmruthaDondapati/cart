@@ -1,11 +1,11 @@
-@Library('roboshop-shared-library') _
-
-env.COMPONENT="cart"
-env.APP="nodejs"
-// nodejs()   # User this for non-docker 
-
-docker()
-
-
-
-// call is the default function which will be called by default from any file.
+pipeline {
+    agent any 
+    stages {
+        stage {
+            steps ('Lintchecks') {
+                sh "echo checking LintChecks"
+                sh "~/node_modules/jslint/bin/jslint.js server.js"
+                sh "lint checks completed!"
+        }
+    }
+}
