@@ -6,7 +6,7 @@ pipeline {
         stage ('LintChecks') {
             steps {
                 script {
-                    LintChecks("start","dev.com")
+                    sample.LintChecks("start","dev.com")
                 }
                 // sh "echo Lintcheks needs to be done"
                 // sh "echo Lintchceks were completed"
