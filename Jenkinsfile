@@ -5,7 +5,7 @@ pipeline {
         stage ('Lintchecks') {
             steps {
                 script {
-                    lintChecks(cart)
+                    lintChecks()
                 }
                 // sh "echo Lintcheks needs to be done"
                 // sh "echo Lintchceks were completed"
